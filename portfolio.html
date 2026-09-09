@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mash Edits Portfolio - Browse our complete collection of wedding photography, events, portraits, videos, drone footage and livestream work.">
+    <meta name="keywords" content="Photography Portfolio, Videography, Wedding Photos, Event Photography, Portraits, Drone Footage">
+    <title>Portfolio - Mash Edits</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Mash Edits</div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="index.html#featured" class="nav-link">Featured</a></li>
+                <li><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Portfolio Header -->
+    <section class="portfolio-header">
+        <div class="container">
+            <h1>Portfolio</h1>
+            <p>Stories captured. Memories preserved.</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Filters -->
+    <section class="portfolio-filters-section">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">ALL</button>
+                <button class="filter-btn" data-filter="weddings">WEDDINGS</button>
+                <button class="filter-btn" data-filter="events">EVENTS</button>
+                <button class="filter-btn" data-filter="portraits">PORTRAITS</button>
+                <button class="filter-btn" data-filter="videos">VIDEOS</button>
+                <button class="filter-btn" data-filter="drone">DRONE</button>
+                <button class="filter-btn" data-filter="livestream">LIVESTREAM</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="portfolio-grid-section">
+        <div class="container">
+            <div id="portfolioGrid" class="portfolio-masonry">
+                <!-- Populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div id="modalBody">
+                <!-- Populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery Lightbox -->
+    <div id="galleryLightbox" class="lightbox">
+        <button class="lightbox-close">&times;</button>
+        <button class="lightbox-prev">&#10094;</button>
+        <button class="lightbox-next">&#10095;</button>
+        <div class="lightbox-container">
+            <img id="lightboxImage" src="" alt="">
+            <div class="lightbox-caption">
+                <span id="lightboxImageCounter"></span>
+                <span id="lightboxImageTitle"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Video Player Modal -->
+    <div id="videoModal" class="modal">
+        <div class="video-modal-content">
+            <button class="modal-close">&times;</button>
+            <div id="videoContainer">
+                <!-- Populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <section class="portfolio-cta">
+        <div class="container">
+            <h2>Let's Create Something Beautiful</h2>
+            <p>Planning a wedding, event or creative project? Let's capture it professionally.</p>
+            <div class="cta-buttons">
+                <a href="index.html#contact" class="cta-button primary">BOOK NOW</a>
+                <a href="index.html#contact" class="cta-button secondary">CONTACT US</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Mash Edits. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Instagram">Instagram</a>
+                <a href="#" aria-label="YouTube">YouTube</a>
+                <a href="#" aria-label="Facebook">Facebook</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="portfolio-data.js"></script>
+    <script src="portfolio.js"></script>
+</body>
+</html>
